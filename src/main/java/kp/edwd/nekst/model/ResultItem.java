@@ -1,4 +1,4 @@
-package kp.edwd.nekst;
+package kp.edwd.nekst.model;
 
 
 public class ResultItem implements Comparable<ResultItem> {

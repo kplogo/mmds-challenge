@@ -1,7 +1,4 @@
-package kp.edwd.nekst;
-
-import kp.edwd.nekst.model.Query;
-import kp.edwd.nekst.model.ResponseRow;
+package kp.edwd.nekst.model;
 
 import java.io.*;
 import java.text.ParseException;

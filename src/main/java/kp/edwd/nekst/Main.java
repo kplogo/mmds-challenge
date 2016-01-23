@@ -1,6 +1,7 @@
 package kp.edwd.nekst;
 
 import ciir.umass.edu.eval.Evaluator;
+import kp.edwd.nekst.model.Result;
 import kp.edwd.nekst.service.DatabaseService;
 
 import java.io.FileNotFoundException;
@@ -21,8 +22,8 @@ public class Main {
         String query;
         databaseService.saveTestFiles(10, -1, -1);
         query = "-load mymodel.txt" +
-//                " -rank test-train.txt" +
-                " -rank train-test.txt" +
+                " -rank test-train.txt" +
+//                " -rank train-test.txt" +
                 " -score myscorefile.txt";
         Evaluator.main(query.split(" "));
         Result result = new Result("myscorefile.txt");
