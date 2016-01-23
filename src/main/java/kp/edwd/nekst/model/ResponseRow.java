@@ -25,7 +25,6 @@ public class ResponseRow {
         this.url = url;
         this.title = title;
         this.abstractText = abstractText;
-        query.getResponseRowList().add(this);
     }
 
     private void parseClickedParams(String clickedParams) throws ParseException {
@@ -57,6 +56,10 @@ public class ResponseRow {
 
     public int getClickCount() {
         return clickedParams.size();
+    }
+
+    public Map<ParameterName, Double> getParams() {
+        return params;
     }
 
     @Override
